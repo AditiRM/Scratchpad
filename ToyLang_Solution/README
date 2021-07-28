@@ -1,0 +1,42 @@
+P1: Toy Language
+
+Problem Statement:
+Given an input program in a ‘Toy’ Language, print the result/output of the code using
+Lex/Yacc. 
+The toy language supports the following features/rules :
+● Program should start with a “START” token and end with an “END” token.
+● Should support variable of type natural number and decimal number
+    ○ Variable name should be simple chara
+● Programs can have multiple statements.
+● Statements can be of following type
+    ○ Print statement :
+        ■ Should print the value of a variable provided as input.
+    ○ Assignment statement :
+        ■ Should assign variables to some number or expression.
+● Expression should be as follows: a + (b * (8 / 3))
+    ○ Should support variables and constants.
+● Should flag error for invalid input with line number.
+
+Bonus questions :
+    ● Support for single line and multi line comments.
+    ● Support for floating point numbers and strings.
+    ● Support string concat string operation.
+
+SAMPLE INPUT AND OUTPUT:
+Input
+    START
+    a = 2
+    b = 5
+    c = 1 + ( b * 4 + ( a / 2))
+    Print c
+    END
+Output
+    22
+Input:
+    START
+    a = 2
+    B = 3 & a
+    Print B
+    END
+Output
+    Error at line number 3
